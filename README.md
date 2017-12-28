@@ -1,9 +1,8 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
+# my-portfolio-website
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+This is my portfolio website
 ```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
+based on gatsby.js
 ```
 
 ## Running in development
