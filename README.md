@@ -2,7 +2,7 @@
 
 This is my portfolio website
 ```
-based on gatsby.js
+gatsby.js
 ```
 
 ## Running in development
