@@ -15,6 +15,7 @@
     "gatsby-source-filesystem": "^1.5.11",
     "gatsby-transformer-remark": "^1.7.26",
     "glamorous": "^4.11.2",
+    "react-addons-css-transition-group": "^15.6.2",
     "typography-theme-noriega": "^0.15.10"
   }
 }
