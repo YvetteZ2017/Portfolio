@@ -3,7 +3,6 @@ import Link from "gatsby-link";
 
 export default () => (
   <div>
-    <p>Hello world from my second Gatsby page</p>
     <div>
     <h1>Richard Hamming on Luck</h1>
     <div>
@@ -26,6 +25,6 @@ export default () => (
     </div>
     <p>Posted April 09, 2011</p>
   </div>
-    <Link to="/">back home</Link>
   </div>
 );
+

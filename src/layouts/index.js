@@ -1,25 +1,53 @@
 import React from "react";
 import Link from "gatsby-link";
+import g from "glamorous";
+import { css } from "glamor";
+import { rhythm } from "../utils/typography";
 
-const ListLink = props =>
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-    <Link to={props.to}>
-      {props.children}
-    </Link>
-  </li>
+const linkStyle = css({ float: `right`, margin: '1em', textDecoration:'none', color:'black'});
+const contentStyle = css({ margin: `0 auto`, maxWidth: '50vw', padding: 'rhythm(2)', paddingTop: 'rhythm(1.5)'})
 
-export default ({ children }) => (
-  <div style={{ margin: `0 auto`, maxWidth: '50vw', padding: `1.25rem 1rem` }}>
-  <header style={{ marginBottom: `1.5rem` }}>
-    <Link to="/" style={{ textShadow: `none`, backgroundImage: `none`, color: 'tomato' }}>
-      <h3 style={{ display: `inline` }}>MySweetSite</h3>
+export default ({ children, data }) => 
+  <g.Div
+    margin={`0 auto`}
+    maxWidth={'98vw'}
+    padding={rhythm(1.5)}
+    paddingTop={rhythm(1.5)}
+  >
+    <Link to={`/`}>
+      <g.H3
+        marginBottom={rhythm(2)}
+        display={`inline-block`}
+        fontStyle={`normal`}
+        fontWeight={200}
+        textDecoration={'underline'}
+        fontFamily={'Times New Roman'}
+        color={'black'}
+        letterSpacing={'0.3em'}
+      >
+        {data.site.siteMetadata.title}
+      </g.H3>
     </Link>
-    <ul style={{ listStyle: `none`, float: `right` }}>
-      <ListLink to="/">Home</ListLink>
-      <ListLink to="/about/">About</ListLink>
-      <ListLink to="/contact/">Contact</ListLink>
-    </ul>
-  </header>
-    {children()}
-  </div>
-);
+    <Link className={linkStyle} to={`/about/`}>
+      About
+    </Link>
+    <Link className={linkStyle} to={`/blog/`}>
+      Blog
+    </Link>
+    <Link className={linkStyle} to={`/projects/`}>
+      Projects
+    </Link>
+    <g.Div className={contentStyle}>
+      {children()}
+    </g.Div>
+  </g.Div>
+
+export const query = graphql`
+query LayoutQuery {
+  site {
+    siteMetadata {
+      title
+    }
+  }
+}
+`
