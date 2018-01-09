@@ -1,11 +1,14 @@
 import React, { Component } from "react";
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import styles from "./layout-css-style.module.css";
+
 
 export default class ProjectItem extends Component {
     
     render() {
         return (
-            <div>Good Night</div>
+            <div>
+                <h1>Hi!</h1>
+            </div>
         )
     }
 }

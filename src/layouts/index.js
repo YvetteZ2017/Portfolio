@@ -1,62 +1,36 @@
 import React from "react";
 import Link from "gatsby-link";
-import g from "glamorous";
-import { css } from "glamor";
-import { rhythm } from "../utils/typography";
-import styles from "./icon-css-style.module.css";
+import styles from "./layout-css-style.module.css";
+import Footer from '../components/Footer';
 
-
-const linkStyle = css({
-  float: `right`,
-  margin: '1em',
-  textDecoration:'none',
-  color:'black'
-});
-
-const contentStyle = css({
-  margin: `0 auto`,
-  maxWidth: '50vw',
-  padding: 'rhythm(2)',
-  paddingTop: 'rhythm(1.5)'
-});
-
-const iconStyle = css({
-  marginBottom: 'rhythm(2)',
-  display: `inline-block`,
-  fontStyle: `normal`,
-  fontWeight: 200,
-  textDecoration: 'underline',
-  fontFamily: 'Times New Roman',
-  color: 'black',
-  letterSpacing: '0.3em',
-  transition: 'all 500 ease-in'
-});
 
 export default ({ children, data }) => 
-  <g.Div
-    margin={`0 auto`}
-    maxWidth={'98vw'}
-    padding={rhythm(1.5)}
-    paddingTop={rhythm(1.5)}
-  >
-  <Link to={`/`}>
-    <g.H3 className={styles.icon}>
-        YVETTE ZHANG
-    </g.H3>
-  </Link>
-    <Link className={linkStyle} to={`/about/`}>
-      About
-    </Link>
-    <Link className={linkStyle} to={`/blog/`}>
-      Blog
-    </Link>
-    <Link className={linkStyle} to={`/projects/`}>
-      Projects
-    </Link>
-    <g.Div className={contentStyle}>
+  <div className={styles.body}>
+    <div className={styles.header}>
+      <Link to={`/`} className={styles.iconflex}>
+        <h3 className={styles.icon}>
+            {data.site.siteMetadata.title}
+        </h3>
+      </Link>
+      <div className={styles.nav}>
+        <Link className={styles.linkStyle} to={`/projects/`}>
+          Projects
+        </Link>
+        <Link className={styles.linkStyle} to={`/blog/`}>
+          Blog
+        </Link>
+        <Link className={styles.linkStyle} to={`/about/`}>
+          About
+        </Link>
+      </div>
+    </div>
+    <div className={styles.contentStyle}>
       {children()}
-    </g.Div>
-  </g.Div>
+    </div>
+    <div className={styles.footer}>
+      <Footer />
+    </div>
+  </div>
 
 export const query = graphql`
 query LayoutQuery {
