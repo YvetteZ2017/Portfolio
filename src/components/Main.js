@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styles from "./main.module.css";
+import Carousel from '../components/Carousel';
 
 export default class Main extends Component {
     
@@ -7,7 +8,7 @@ export default class Main extends Component {
         return (
             <div className={styles.main}>
             <div className={styles.carouselFlex}>
-              <img src="/static/photos/moon.jpg"/>
+              <Carousel />
             </div>
             <div className={styles.text}>
               <h3 className={styles.name}>Yvette Zhang</h3>
@@ -24,4 +25,3 @@ export default class Main extends Component {
 
     
 }
-
