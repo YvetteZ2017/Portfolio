@@ -1,18 +1,10 @@
 .header {
-    width: 95vw;
-    /* height: 16vh; */
-    height: 12vh;
-    margin: 0 auto;
-    padding: 1em 0 0 1em;
+    width: calc(100% - 2em);
     position: fixed;
     display: flex;
-    z-index: 0;
+    z-index: 2;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.97);
-}
-
-.iconflex {
-    flex: 3;
 }
 
 .icon {
@@ -22,7 +14,6 @@
     color: black;
     letter-spacing: 0.2em;
     position: relative;
-    color: #000;
     text-decoration: none;
     font-size: 1em;
     margin: 1em 0;
@@ -56,7 +47,7 @@
 
 .nav {
     display: flex;
-    /* align-items: flex-end; */
+    align-self: flex-end;
 }
 
 .linkStyle {
@@ -71,3 +62,17 @@
     background-color: #db2049;
 }
 
+@media screen and (max-width: 500px) {
+    .header {
+        flex-flow: column;
+        width: calc(100% - 2vw);
+        padding-left: 2vw;
+    }
+
+    .icon {
+        padding-left: 4vw;
+    }
+    .nav {
+        align-self: flex-start;
+    }
+}

@@ -1,0 +1,114 @@
+.main {
+    color: #db2049;
+    /* background-image: url("/static/photos/moon.jpg"); */
+    background-size: auto;
+    height: 70vh;
+    max-width: 80vw;
+    padding: 1em 0 0 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.carouselFlex {
+    flex: 1.05;
+    padding: 0 1.3em 0 0;
+}
+
+/* @keyframes carousel {
+    0% {src: url('/static/photos/moon.jpg')}
+    100% {src: url('/static/photos/ocean.jpg')}
+}
+
+.carouselImg {
+    animation: carousel 0.5s ease;
+    animation-iteration-count: infinite;
+} */
+
+@keyframes textScaleY {
+    0% {transform: translateX(20vw); opacity: 0}
+    100% {transform: translateX(0); opacity: 1}
+}
+
+.text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    animation: textScaleY 1s ease-in-out;
+}
+
+
+.name {
+    font-weight: 150;
+    font-size: 2em;
+    letter-spacing: 0.5em;
+    font-family: 'Times New Roman', Times, serif;    
+}
+
+.sub {
+    letter-spacing: 0.1em;
+    font-weight: 100;
+    margin-bottom: 1.6em;
+}
+
+p {
+    margin-bottom: 0.1em;
+}
+
+.flex {
+    display: flex;
+}
+
+.contact {
+    display: inline-block;
+    font-style: normal;
+    text-decoration: none;
+    position: relative;
+    color: #db2049;
+    padding: 0 0.5em;
+}
+
+.contact:hover {
+    color: #db2049;
+}
+
+.contact::before {
+    transition: all 0.3s ease;
+    transform: scaleX(0);
+    visibility: hidden;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.5em;
+    bottom: 0;
+    right: 50%;
+    border-bottom: 0.01em solid #db2049;
+}
+
+.contact:hover::before {
+    transform: scaleX(1);
+    visibility: visible;
+    width: 100%;
+    right: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .main {
+        flex-flow: column;
+        margin: 5%;
+    }
+
+    .name {
+        font-size: 7vw;
+        letter-spacing: 2vw;
+    }
+
+    .sub {
+        font-size: 4vw;
+    }
+    p, .contact {
+        font-size: 3.2vw;
+    }
+
+}

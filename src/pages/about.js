@@ -4,12 +4,13 @@ import Link from "gatsby-link";
 export default () => (
   <div>
     <div>
-    <h1>Richard Hamming on Luck</h1>
+    <h1>Hello from Yvette</h1>
     <div>
       <p>
-        From Richard Hamming’s classic and must-read talk, “<a href="http://www.cs.virginia.edu/~robins/YouAndYourResearch.html">
-          You and Your Research
-        </a>”.
+        Hello, thank you for visiting my website! 
+        
+        I enjoy engineering challenges in web development. 
+        When I have free time I draw, play tennis, video games and develop. 
       </p>
       <blockquote>
         <p>
@@ -23,7 +24,6 @@ export default () => (
         </p>
       </blockquote>
     </div>
-    <p>Posted April 09, 2011</p>
   </div>
   </div>
 );

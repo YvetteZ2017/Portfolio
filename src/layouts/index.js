@@ -13,9 +13,7 @@ export default ({ children, data }) => {
       <div className={styles.contentStyle}>
         {children()}
       </div>
-      <div className={styles.footer}>
-        <Footer />
-      </div>
+      <Footer />
       </div>
   )
 }

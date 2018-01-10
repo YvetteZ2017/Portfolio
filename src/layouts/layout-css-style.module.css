@@ -7,13 +7,29 @@
 
 .contentStyle {
     margin: 0 auto;
-    /* max-width: 60vw; */
-    /* padding-top: 20vh; */
-    padding: 12vh 1em 1em 1em;
-    
+    padding: 100px 1em 1em 1em;
+    z-index: 0;
 }
 
 .footer {
-    text-align: center;
+    text-align: 'center';
+    z-index: 2;
+}
+
+@media screen and (max-width: 500px) {
+    .body {
+        margin: 0 1vw;
+    }
+    .contentStyle {
+        padding: 100px 0;
+        margin: 0 0 2vh 0;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+        align-self: center;
+        background-color: 'white';
+        z-index: 2;
+    }
 }
 
