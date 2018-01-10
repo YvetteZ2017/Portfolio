@@ -7,7 +7,7 @@ import { rhythm } from "../utils/typography";
 export default ({ data }) => {
   console.log(data);
   return (
-    <div>
+    <g.Div>
       <g.H1 display={"inline-block"} borderBottom={"1px solid"}>
         Amazing Pandas Eating Things
       </g.H1>
@@ -26,7 +26,7 @@ export default ({ data }) => {
           </Link>
         </div>
       ))}
-    </div>
+    </g.Div>
   );
 };
 
