@@ -1,6 +1,5 @@
 .main {
     color: #db2049;
-    /* background-image: url("/static/photos/moon.jpg"); */
     background-size: auto;
     height: 70vh;
     max-width: 80vw;
@@ -14,16 +13,6 @@
     flex: 1.05;
     padding: 0 1.3em 0 0;
 }
-
-/* @keyframes carousel {
-    0% {src: url('/static/photos/moon.jpg')}
-    100% {src: url('/static/photos/ocean.jpg')}
-}
-
-.carouselImg {
-    animation: carousel 0.5s ease;
-    animation-iteration-count: infinite;
-} */
 
 @keyframes textScaleY {
     0% {transform: translateX(20vw); opacity: 0}

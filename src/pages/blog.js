@@ -1,32 +1,31 @@
 import React from "react";
 import Link from "gatsby-link";
-import g from "glamorous";
+import styles from './page.module.css';
 
-import { rhythm } from "../utils/typography";
 
 export default ({ data }) => {
-  console.log(data);
   return (
-    <g.Div>
-      <g.H1 display={"inline-block"} borderBottom={"1px solid"}>
-        Amazing Pandas Eating Things
-      </g.H1>
-      <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+    <div className={styles.page}>
+      <h1>
+        My Blog
+      </h1>
+      <h4 className={styles.blogPosts}>{data.allMarkdownRemark.totalCount} Posts</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
         <Link
         to={node.fields.slug}
         css={{ textDecoration: `none`, color: `inherit` }}
       >
-          <g.H3 marginBottom={rhythm(1 / 4)}>
+          <h3 style={{marginBottom: '10'}}>
             {node.frontmatter.title}{" "}
-            <g.Span color="#BBB">— {node.frontmatter.date}</g.Span>
-          </g.H3>
+            <span className={styles.blogSpan}>— {node.frontmatter.date}</span>
+          </h3>
           <p>{node.excerpt}</p>
           </Link>
+          <br/>
         </div>
       ))}
-    </g.Div>
+    </div>
   );
 };
 

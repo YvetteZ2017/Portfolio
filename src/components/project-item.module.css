@@ -1,0 +1,45 @@
+.container {
+    position: relative;
+    /* width: calc(25vw - 2%); */
+    width: calc(50vw - 2%);
+    margin: 1%;
+    padding: 1%;
+    background-color: #f6f6f6
+  }
+  
+  .image {
+    display: block;
+    /* width: calc(25vw - 4%); */
+    /* height: 25vh; */
+    width: calc(50vw - 4%);    
+    height: 50vh;
+    object-fit: cover;
+    margin: 0;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: #000;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }

@@ -2,15 +2,19 @@ import React, { Component } from "react";
 import styles from "./project-item.module.css";
 
 
-export default class ProjectItem extends Component {
+const ProjectItem = (props) => {
+    const { imageSrc, title } = props
     
-    render() {
-        return (
-            <div>
-                <h1>Hi!</h1>
-            </div>
-        )
-    }
+    return (
+        <div className={styles.container}>
+        <img src={imageSrc} className={styles.image} />
+        <div className={styles.overlay}>
+            <div className={styles.text}>{title}</div>
+        </div>
+        </div>
+    )
 }
+
+export default ProjectItem;
 
 

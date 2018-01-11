@@ -1,5 +1,8 @@
+/* header css styles */
+
 .header {
     width: calc(100% - 2em);
+    padding-top: 1em;
     position: fixed;
     display: flex;
     z-index: 2;

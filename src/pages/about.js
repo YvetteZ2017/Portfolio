@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "gatsby-link";
+import styles from './page.module.css';
 
 export default () => (
-  <div>
+  <div className={styles.page}>
     <div>
     <h1>Hello from Yvette</h1>
     <div>
