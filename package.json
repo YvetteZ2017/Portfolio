@@ -15,6 +15,7 @@
     "gatsby-source-filesystem": "^1.5.11",
     "gatsby-transformer-remark": "^1.7.26",
     "react-icons": "^2.2.7",
+    "react-modal": "^3.1.10",
     "typography-theme-noriega": "^0.15.10"
   }
 }
