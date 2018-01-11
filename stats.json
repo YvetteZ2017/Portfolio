@@ -1,0 +1,76 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-bccd2790957e0d542188.js",
+      "component---src-pages-index-js-bccd2790957e0d542188.js.map"
+    ],
+    "path---my-dive-into-binary-puzzles": [
+      "path---my-dive-into-binary-puzzles-1bc9bdea9df016ba484e.js",
+      "path---my-dive-into-binary-puzzles-1bc9bdea9df016ba484e.js.map"
+    ],
+    "path---blog": [
+      "path---blog-78d2a27039587b55bb43.js",
+      "path---blog-78d2a27039587b55bb43.js.map"
+    ],
+    "path---": [
+      "path----a2f10337c80711196d6c.js",
+      "path----a2f10337c80711196d6c.js.map"
+    ],
+    "path---projects": [
+      "path---projects-a0e39f21c11f6a62c5ab.js",
+      "path---projects-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-templates-blog-post-js": [
+      "component---src-templates-blog-post-js-b84dc952d929669935d8.js",
+      "component---src-templates-blog-post-js-b84dc952d929669935d8.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-1d09ceb636bf96d8bf75.js",
+      "component---src-layouts-index-js-1d09ceb636bf96d8bf75.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-my-files-js": [
+      "component---src-pages-my-files-js-21c06c5cfc6f73cef18b.js",
+      "component---src-pages-my-files-js-21c06c5cfc6f73cef18b.js.map"
+    ],
+    "path---my-files": [
+      "path---my-files-10eae2e58d2d314484db.js",
+      "path---my-files-10eae2e58d2d314484db.js.map"
+    ],
+    "commons": [
+      "commons-3b8247519c2289a0946f.js",
+      "build-js-styles.css",
+      "commons-3b8247519c2289a0946f.js.map",
+      "build-js-styles.css.map"
+    ],
+    "component---src-pages-blog-js": [
+      "component---src-pages-blog-js-81f78e7aae54130f7ef5.js",
+      "component---src-pages-blog-js-81f78e7aae54130f7ef5.js.map"
+    ],
+    "component---src-pages-projects-js": [
+      "component---src-pages-projects-js-f8ff537f6b5ac7ddfaba.js",
+      "component---src-pages-projects-js-f8ff537f6b5ac7ddfaba.js.map"
+    ],
+    "app": [
+      "app-7c01214be6d6403256fd.js",
+      "build-js-styles.css",
+      "app-7c01214be6d6403256fd.js.map",
+      "build-js-styles.css.map"
+    ],
+    "component---src-pages-about-js": [
+      "component---src-pages-about-js-6da3dd6be25d5b837135.js",
+      "component---src-pages-about-js-6da3dd6be25d5b837135.js.map"
+    ],
+    "path---about": [
+      "path---about-a0e39f21c11f6a62c5ab.js",
+      "path---about-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---welcome": [
+      "path---welcome-f9a4f4a46ff8d4dd0688.js",
+      "path---welcome-f9a4f4a46ff8d4dd0688.js.map"
+    ]
+  }
+}
