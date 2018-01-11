@@ -5,40 +5,112 @@
     /* padding: 1%; */
     /* background-color: #f6f6f6 */
   }
-  
-  .image {
-    display: block;
-    /* width: calc(25vw - 4%); */
-    /* height: 25vh; */
-    width: calc(50vw - 4%);    
-    height: 50vh;
-    object-fit: cover;
-    margin: 0;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-  
-  .container:hover .overlay {
-    opacity: 1;
-  }
-  
-  .text {
-    color: #000;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
+
+.image {
+  display: block;
+  /* width: calc(25vw - 4%); */
+  /* height: 25vh; */
+  width: calc(50vw - 4%);    
+  height: 40vh;
+  object-fit: cover;
+  margin: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: #000;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* video */
+
+.videoBackground {
+  z-index: -99;
+  justify-content: center;
+  align-self: center;
+}
+.videoForeground,
+.videoBackground iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtopContent {
+  top: 0;
+  height: 100%;
+  color: #000;
+}
+
+.iframe {
+  border: 0;
+}
+
+.vidInfo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38.7%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  padding: 1rem;
+  font-weight: 200;
+}
+
+.vidInfo h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+.vidInfo a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0,0,0,0.5);
+  transition: .6s background;
+  border-bottom: none;
+  margin: 0.5em auto;
+  text-align: center;
+  font-weight: 200;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+
+@media all and (max-width: 600px) {
+.iframe { display: none}
+.vidInfo { width: 100%; padding: 1rem; }
+.vidInfo h1 { margin-bottom: .2rem; }
+.videoBackground { width: 100%; height: 100%}
+.videoImg {display: flex; object-fit: fill}
+}

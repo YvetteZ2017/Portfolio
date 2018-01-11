@@ -3,6 +3,7 @@
     margin: 0 1em;
     flex-direction: column;
     font-weight: 260;
+    box-sizing: border-box;
 }
 
 .contentStyle {
