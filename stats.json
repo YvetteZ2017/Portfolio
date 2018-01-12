@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-300e7604d2a8dce48328.js",
-      "component---src-pages-index-js-300e7604d2a8dce48328.js.map"
+      "component---src-pages-index-js-a2be2fdb4f4f2f6321d1.js",
+      "component---src-pages-index-js-a2be2fdb4f4f2f6321d1.js.map"
     ],
     "path---my-dive-into-binary-puzzles": [
       "path---my-dive-into-binary-puzzles-1bc9bdea9df016ba484e.js",
@@ -37,8 +37,8 @@
       "component---src-pages-my-files-js-21c06c5cfc6f73cef18b.js.map"
     ],
     "path---my-files": [
-      "path---my-files-61cc8175d09db1d09955.js",
-      "path---my-files-61cc8175d09db1d09955.js.map"
+      "path---my-files-6a1d5271f69b03ea96e3.js",
+      "path---my-files-6a1d5271f69b03ea96e3.js.map"
     ],
     "commons": [
       "commons-3b8247519c2289a0946f.js",
