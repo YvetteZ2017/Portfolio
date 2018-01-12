@@ -69,13 +69,17 @@
     .header {
         flex-flow: column;
         width: calc(100% - 2vw);
-        padding-left: 2vw;
+    }
+
+    .iconflex {
+        align-items: center;
+        margin: 0 auto;
     }
 
     .icon {
-        padding-left: 4vw;
+        margin: 0;
     }
     .nav {
-        align-self: flex-start;
+        align-self: center;
     }
 }

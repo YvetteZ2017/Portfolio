@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styles from "./main.module.css";
 
 const srcArray = [
     './static/photos/moon.jpg',
@@ -32,7 +33,7 @@ export default class Carousel extends Component {
 
     render() {
         return (
-            <img src={this.state.src} style={{width: '45vw', height: '52vh', objectFit: 'cover'}}/>
+            <img src={this.state.src} className={styles.carouselImg}/>
         )
     }
 }

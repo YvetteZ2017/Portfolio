@@ -2,7 +2,7 @@
     color: #db2049;
     background-size: auto;
     height: 70vh;
-    max-width: 80vw;
+    width: 80vw;
     padding: 1em 0 0 0;
     z-index: 2;
     display: flex;
@@ -13,6 +13,8 @@
     flex: 1.05;
     padding: 0 1.3em 0 0;
 }
+
+
 
 @keyframes textScaleY {
     0% {transform: translateX(20vw); opacity: 0}
@@ -82,22 +84,40 @@ p {
     right: 0;
 }
 
+/* Carousel Component*/
+.carouselImg {
+    width: 45vw;
+    height: 52vh;
+    object-fit: cover;
+}
+
 @media screen and (max-width: 500px) {
     .main {
         flex-flow: column;
         margin: 5%;
+        width: auto;
+        height: auto;
     }
 
     .name {
         font-size: 7vw;
         letter-spacing: 2vw;
+        text-align: center;
     }
 
-    .sub {
-        font-size: 4vw;
-    }
-    p, .contact {
-        font-size: 3.2vw;
+    .carouselImg {
+        width: 90vw;
+        height: 45vh;
+        padding: 0;
     }
 
+    .spec, .sub, .contact {
+        text-align: center;
+    }
+
+    .flex {
+        justify-content: center;
+    }
 }
+
+

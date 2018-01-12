@@ -113,4 +113,6 @@
 .vidInfo h1 { margin-bottom: .2rem; }
 .videoBackground { width: 100%; height: 100%}
 .videoImg {display: flex; object-fit: fill}
+.container {width: 80vw}
+.image {width: auto; object-fit: cover}
 }

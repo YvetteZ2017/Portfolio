@@ -13,10 +13,10 @@ export default class Main extends Component {
             <div className={styles.text}>
               <h3 className={styles.name}>Yvette Zhang</h3>
               <p className={styles.sub}>Full Stack Engineer | New York, NY</p>
-              <p>Specialized in Javascript, React and React Native</p>
+              <p className={styles.spec}>Specialized in Javascript, React and React Native</p>
               <div className={styles.flex}>
-              <p>Contact:</p>
-              <p><a href={'mailto:yvettez2016@gmail.com'} className={styles.contact}>yvettez2016@gmail.com</a></p>
+              <p className={styles.spec}>Contact:</p>
+              <p className={styles.spec}><a href={'mailto:yvettez2016@gmail.com'} className={styles.contact}>yvettez2016@gmail.com</a></p>
               </div>
             </div>
           </div>

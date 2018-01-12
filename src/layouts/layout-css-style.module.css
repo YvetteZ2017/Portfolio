@@ -13,7 +13,7 @@
 }
 
 .footer {
-    text-align: 'center';
+    align-items: 'center';
     z-index: 2;
 }
 
@@ -29,8 +29,9 @@
         position: fixed;
         bottom: 0;
         align-self: center;
-        background-color: 'white';
-        z-index: 2;
+        background: white;
+        z-index: 3;
+        width: 100vw;
     }
 }
 
