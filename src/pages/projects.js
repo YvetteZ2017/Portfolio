@@ -21,7 +21,7 @@ const projectInfo = [
     {
         title: 'White Out',
         imageSrc: '../static/photos/projects/weather.jpg',
-        videoId: '',
+        videoId: 'HpKDpK4-4Bc',
         description: 'White Out is a mobile weather app that shows the weather of both the user’s location and other places around the world. The app was build with React-Native and D3. Users are able to search weather of any city via location auto-complete by Google API, switch between displaying temperatures in either Celsius or Fahrenheit units.',
         role: 'Sole developer over a period of four days for a hackathon competition.',
         link: 'https://github.com/YvetteZ2017/stackathon',
@@ -29,8 +29,8 @@ const projectInfo = [
     {
         title: 'Puyo Stone',
         imageSrc: '../static/photos/projects/puyo.png',
-        videoId: '',
-        description: 'Puyo Stone is a recreation of the Japanese Sega classic game Puyo-Puyo in Javascript using React.js, D3, and Firebase.',
+        videoId: 'NQmhqrnROTo',
+        description: 'Puyo Stone is a recreation of the Japanese Sega classic game Puyo-Puyo. It was built in Javascript using React.js, D3, and Firebase.',
         role: 'This game was built by a team of four. I was Responsible for D3 SVG animation, rendering and designing game interface.',
         link: 'https://puyost.one',
     },

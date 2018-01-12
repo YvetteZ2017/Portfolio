@@ -50,7 +50,11 @@ export default class ProjectItem extends Component {
                     
                     <div className={styles.videoBackground}>
                         <div className={styles.videoForeground}>
-                            <iframe src={this.embedVideo(videoId)} frameBorder="0" allowfullscreen className={styles.iframe}></iframe>
+                        {
+                            videoId.length? <iframe src={this.embedVideo(videoId)} frameBorder="0" allowfullscreen className={styles.iframe}></iframe> :
+                            <img src={imageSrc} className={styles.image} />
+                        }
+                            
                         </div>
                     </div>
                     
@@ -60,7 +64,7 @@ export default class ProjectItem extends Component {
                             <p>{description}</p>
                             <p>{'My role: ' + role}</p>
                             {link.length ? <a href={link}>Check out this project</a> : null}
-                            <a href={this.linkToVideo(videoId)}>Full Video</a>
+                            {videoId.length?  <a href={this.linkToVideo(videoId)}>Full Video</a> : null}
                         </div>
                     </div>
                 </Modal>    
