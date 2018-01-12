@@ -16,7 +16,7 @@ const ulStyle = css({
 
 const socialIcons = css({
   margin: '0.5em',
-  color: '#000',
+  color: '#db2049',
 })
 
 const copyright = css({

@@ -1,0 +1,11 @@
+.container {
+    max-width: 50vw
+}
+
+img {
+    align-self: center;
+}
+
+.date {
+    color: #B5ACAC;
+}

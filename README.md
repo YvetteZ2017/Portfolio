@@ -1,6 +1,6 @@
 # my-portfolio-website
 
-This is my portfolio website build with Gatsby.js
+This is my portfolio website built with Gatsby.js
 
 https://yvettez2017.github.io/Portfolio/
 
