@@ -94,4 +94,4 @@ const modalStyle = {
     }
 }
 
-Modal.setAppElement('#___gatsby')
+// Modal.setAppElement('#___gatsby')

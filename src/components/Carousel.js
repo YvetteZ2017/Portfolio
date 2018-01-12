@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
 const srcArray = [
-    '/static/photos/moon.jpg',
-    '/static/photos/dawn.jpg',
-    '/static/photos/jupiter.jpg',
-    '/static/photos/antarctica.jpg',
-    '/static/photos/ocean.jpg',
+    './static/photos/moon.jpg',
+    './static/photos/ocean.jpg',
+    './static/photos/jupiter.jpg',
+    './static/photos/dawn.jpg',
+    './static/photos/antarctica.jpg',
 ];
 
 const srcLength = srcArray.length;
@@ -14,7 +14,7 @@ export default class Carousel extends Component {
     constructor() {
         super()
         this.state = {
-            src: '/static/photos/moon.jpg',
+            src: './static/photos/moon.jpg',
             idx: 0
         }
         this.updateImg = this.updateImg.bind(this);
