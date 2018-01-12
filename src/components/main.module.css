@@ -111,6 +111,10 @@ p {
         padding: 0;
     }
 
+    .carouselFlex {
+        padding: 0;
+    }
+
     .spec, .sub, .contact {
         text-align: center;
     }
