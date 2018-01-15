@@ -10,6 +10,11 @@
     background-color: rgba(255, 255, 255, 0.97);
 }
 
+@font-face {
+    font-family: myFont;
+    src: url(/static/photos/GaramondPro.ttf);
+}
+
 .icon {
     display: inline-block;
     font-style: normal;
@@ -20,7 +25,8 @@
     text-decoration: none;
     font-size: 1em;
     margin: 1em 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: myFont, 'Times New Roman', Times, serif;
+
 }
 
 .icon:hover {
@@ -58,11 +64,40 @@
     text-decoration: none;
     color: black;
     margin: 0.5em;
+    display: inline-block;
+    position: relative;
+    transition: all .3s cubic-bezier(.2, 0, 0, 1);
+    z-index: 1;
 }
 
 .linkStyle:hover {
     color: white;
+}
+
+.linkStyle::before {
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 1.25rem;
+    left: 1.25rem;
     background-color: #db2049;
+    transition: all .3s cubic-bezier(.2, 0, 0, 1);
+    transform-origin: bottom center;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.linkStyle:hover {
+    color: #ffffff;
+}
+
+.linkStyle:hover::before {
+    right: 0;
+    left: 0;
+    height: 100%;
+    visibility: visible;
 }
 
 @media screen and (max-width: 500px) {

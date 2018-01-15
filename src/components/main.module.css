@@ -14,7 +14,10 @@
     padding: 0 1.3em 0 0;
 }
 
-
+@font-face {
+    font-family: myFont;
+    src: url(/static/photos/GaramondPro.ttf);
+}
 
 @keyframes textScaleY {
     0% {transform: translateX(20vw); opacity: 0}
@@ -34,7 +37,7 @@
     font-weight: 150;
     font-size: 2em;
     letter-spacing: 0.5em;
-    font-family: 'Times New Roman', Times, serif;    
+    font-family: MyFont, 'Times New Roman', Times, serif;    
 }
 
 .sub {
