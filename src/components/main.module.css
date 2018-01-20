@@ -1,9 +1,9 @@
 .main {
-    color: #db2049;
+    /* color: #db2049; */
     background-size: auto;
     height: 70vh;
     width: 80vw;
-    padding: 1em 0 0 0;
+    /* padding: 1em 0 0 0; */
     z-index: 2;
     display: flex;
     align-items: center;
@@ -34,14 +34,11 @@
 
 
 .name {
-    font-weight: 150;
     font-size: 2em;
-    letter-spacing: 0.5em;
-    font-family: MyFont, 'Times New Roman', Times, serif;    
+    font-weight: 100;
 }
 
 .sub {
-    letter-spacing: 0.1em;
     font-weight: 100;
     margin-bottom: 1.6em;
 }
@@ -59,7 +56,8 @@ p {
     font-style: normal;
     text-decoration: none;
     position: relative;
-    color: #db2049;
+    /* color: #db2049; */
+    color: black;
     padding: 0 0.5em;
 }
 
@@ -90,22 +88,30 @@ p {
 /* Carousel Component*/
 .carouselImg {
     width: 45vw;
-    height: 52vh;
+    /* height: 52vh; */
+    height: 65vh;
     object-fit: cover;
 }
 
 @media screen and (max-width: 500px) {
+    * {
+        font-family: 'Lato', sans-serif;
+    }
+
     .main {
         flex-flow: column;
         margin: 5%;
         width: auto;
         height: auto;
+        color: black;
     }
 
     .name {
         font-size: 7vw;
-        letter-spacing: 2vw;
+        letter-spacing: 0;
         text-align: center;
+        font-weight: 100;
+        font-family: 'Lato', sans-serif;
     }
 
     .carouselImg {
@@ -118,8 +124,14 @@ p {
         padding: 0;
     }
 
+    .sub {
+        margin-bottom: 0;
+    }
+
     .spec, .sub, .contact {
         text-align: center;
+        letter-spacing: 0;
+        color: black;
     }
 
     .flex {

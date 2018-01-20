@@ -13,6 +13,7 @@
 .projectPageTitle {
     padding: 3% 2% 1% 2%;
     text-align: center;
+    display: none;
 }
 
 h1, h3, h4 {
@@ -44,5 +45,9 @@ h1, h3, h4 {
     .page {
         width: 80vw;
         margin: auto;
+    }
+
+    .projectPageTitle {
+        display: flex;
     }
 }

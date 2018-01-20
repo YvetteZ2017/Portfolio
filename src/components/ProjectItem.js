@@ -52,7 +52,7 @@ export default class ProjectItem extends Component {
                         <div className={styles.videoForeground}>
                         {
                             videoId.length? <iframe src={this.embedVideo(videoId)} frameBorder="0" allowfullscreen className={styles.iframe}></iframe> :
-                            <img src={imageSrc} className={styles.image} />
+                            <img src={imageSrc} className={styles.videoImg} />
                         }
                             
                         </div>
@@ -77,6 +77,7 @@ export default class ProjectItem extends Component {
 const modalStyle = {
     overlay: {
         backgroundColor: 'rgba(0, 0, 0, 0.7)',
+        // backgroundColor: 'rgba(255, 255, 255, 0.7)',
         zIndex: 3,
         position: 'fixed',
         left: 0,
@@ -93,7 +94,7 @@ const modalStyle = {
         zIndex: 3,
         position: 'fixed',
         justifyContent: 'center',
-        left: 0,
+        // left: 0,
         border: 0,
     }
 }
