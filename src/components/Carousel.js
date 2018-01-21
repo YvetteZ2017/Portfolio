@@ -20,16 +20,21 @@ export default class Carousel extends Component {
             src: './static/photos/moon2.jpg',
             idx: 0
         }
+        this.updateImg = this.updateImg.bind(this);
     }
 
     componentDidMount() {
         carouselInterval = setInterval(() => {
-            this.setState({src: srcArray[this.state.idx], idx: this.state.idx === srcLength - 1 ? 0 : this.state.idx + 1})
+            this.updateImg();
         }, 7000)
     }
 
     componentWillUnmount() {
         clearInterval(carouselInterval);
+    }
+
+    updateImg() {
+        this.setState({src: srcArray[this.state.idx], idx: this.state.idx === srcLength - 1 ? 0 : this.state.idx + 1});
     }
 
     render() {
