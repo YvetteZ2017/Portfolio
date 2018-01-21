@@ -114,6 +114,10 @@ p {
         color: white;
     }
 
+    .text {
+        left: auto;
+    }
+
     .name {
         font-size: 7vw;
         text-align: center;
@@ -122,8 +126,6 @@ p {
     }
 
     .carouselImg {
-        /* width: 90vw; */
-        /* height: 45vh; */
         padding: 0;
         z-index: -5;
     }

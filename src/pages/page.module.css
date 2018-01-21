@@ -48,11 +48,12 @@ h1, h3, h4 {
 @media screen and (max-width: 500px) {
     .projectPage{
         width: auto;
+        margin: 15vh auto 10vh auto;
     }
 
     .page {
         width: 80vw;
-        margin: 15vh auto 2vh auto;
+        margin: 15vh auto 10vh auto;
     }
 
     .projectPageTitle {
