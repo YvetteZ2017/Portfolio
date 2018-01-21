@@ -1,12 +1,12 @@
 /* header css styles */
 
 .header {
-    width: calc(100% - 2em);
-    position: fixed;
+    width: 100%;
+    padding: 1em;
     display: flex;
     z-index: 2;
     justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.97);
+    position: fixed;
 }
 
 @font-face {
@@ -18,18 +18,18 @@
     display: inline-block;
     font-style: normal;
     font-weight: 100;
-    color: black;
+    /* color: white; */
     letter-spacing: 0.2em;
     position: relative;
     text-decoration: none;
     font-size: 1em;
     margin: 1em 0;
-    font-family: myFont, 'Times New Roman', Times, serif;
+    font-family: Georgia, serif;
 
 }
 
 .icon:hover {
-    color: black;
+    /* color: white; */
 }
 
 .icon::before {
@@ -42,8 +42,8 @@
     height: 20px;
     bottom: 0;
     right: 50%;
-    color: black;
-    border-bottom: 0.05em solid black;
+    /* color: white; */
+    border-bottom: 0.05em solid;
 }
 
 .icon:hover::before{
@@ -61,7 +61,7 @@
 .linkStyle {
     padding: 0.2em 0.5em;
     text-decoration: none;
-    color: black;
+    /* color: white; */
     margin: 0.5em;
     display: inline-block;
     position: relative;
@@ -99,10 +99,21 @@
     visibility: visible;
 }
 
+
+
+/* footer styles */
+.footer {
+    align-items: 'center';
+    z-index: 2;
+    bottom: 0;
+    left: calc(50% - 5em);
+}
+
+
 @media screen and (max-width: 500px) {
     .header {
         flex-flow: column;
-        width: calc(100% - 2vw);
+        width: 100%;
     }
 
     .iconflex {
@@ -115,5 +126,12 @@
     }
     .nav {
         align-self: center;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        align-self: center;
+        z-index: 3;
     }
 }

@@ -1,29 +1,20 @@
 import React from "react";
 import Link from "gatsby-link";
-import styles from "./layout-css-style.module.css";
-import Footer from '../components/Footer';
-import Header from '../components/Header';
+import { css } from 'glamor';
 
-export default ({ children, data }) => {
-  const { title } = data.site.siteMetadata;
+const bodyStyle = css({
+  fontWeight: 200,
+  boxSizing: 'border-box',
+  minHeight: '100vh',
+})
+
+export default ({ children }) => {
 
   return (
-    <div className={styles.body}>
-      <Header />
-      <div className={styles.contentStyle}>
+    <div className={bodyStyle}>
+      <div>
         {children()}
       </div>
-      <Footer />
-      </div>
+    </div>
   )
 }
-
-export const query = graphql`
-query LayoutQuery {
-  site {
-    siteMetadata {
-      title,
-    }
-  }
-}
-`

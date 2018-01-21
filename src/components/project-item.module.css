@@ -9,7 +9,7 @@
 .image {
   display: block;
   width: calc(50vw - 16%);    
-  height: 40vh;
+  height: 35vh;
   object-fit: fill;
   margin: 0;
 }
@@ -71,7 +71,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 38.7%;
+  width: 38.8%;
   height: 100%;
   background: rgba(0,0,0,0.3);
   color: #fff;

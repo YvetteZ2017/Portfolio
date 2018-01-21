@@ -2,18 +2,24 @@ import React from "react";
 import Link from "gatsby-link";
 import styles from './page.module.css';
 import ProjectItem from '../components/ProjectItem';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 export default () => (
-    <div className={styles.projectPage}>
-        <h1 className={styles.projectPageTitle}>My Projects</h1>
-        <div className={styles.projectContainer}>
-        {
-            projectInfo.map((project, i) => (
-                <ProjectItem key={i} info={projectInfo[i]}/>
-            )
-            )
-        }
+    <div className={styles.flex}>
+        <Header color='black'/>
+        <div className={styles.projectPage}>
+            <h1 className={styles.projectPageTitle}>My Projects</h1>
+            <div className={styles.projectContainer}>
+            {
+                projectInfo.map((project, i) => (
+                    <ProjectItem key={i} info={projectInfo[i]}/>
+                )
+                )
+            }
+            </div>
         </div>
+        <Footer color='black' left='auto' />
     </div>
 )
 

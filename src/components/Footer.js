@@ -1,6 +1,6 @@
 import React from "react";
 import { css } from "glamor";
-import styles from '../layouts/layout-css-style.module.css';
+import styles from './header.module.css';
 
 import FaGithub from 'react-icons/lib/fa/github';
 import FaLinkedIn from 'react-icons/lib/fa/linkedin';
@@ -24,14 +24,15 @@ const copyright = css({
   textAlign: 'center'
 })
 
-const Footer = () => {
+const Footer = (props) => {
     const github = 'https://github.com/YvetteZ2017';
     const linkedin = 'https://linkedin.com/in/yvette-zhang-100';
     const mailto = 'mailto:yvettez2016@gmail.com';
     const medium = 'https://medium.com/@yvetteRinzuchan';
+    const { color, position, left }= props;
   
     return (
-      <div className={styles.footer}>
+      <div className={styles.footer} css={{ color, position, left }}>
         <div className={ulStyle}>
             <a href={github} target="_blank" className={socialIcons}><FaGithub size={'1.5em'}/></a>
             <a href={linkedin} target="_blank" className={socialIcons}><FaLinkedIn size={'1.5em'}/></a>

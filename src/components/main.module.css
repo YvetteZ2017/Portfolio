@@ -1,11 +1,5 @@
 .main {
-    /* color: #db2049; */
-    background-size: auto;
-    height: 70vh;
-    width: 80vw;
-    /* padding: 1em 0 0 0; */
     z-index: 2;
-    display: flex;
     align-items: center;
 }
 
@@ -20,19 +14,31 @@
 }
 
 .text {
-    flex: 1;
+    /* flex: 1; */
+    position: fixed;
+    margin: auto;
+    top: 40vh;
+    left: calc(50% - 11.5em);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     animation: textScaleY 1s ease-in-out;
+    z-index: 2;
+    color: white;
+    text-align: center;
 }
 
 
 .name {
     font-size: 2em;
-    font-weight: 50;
-    font-family: Georgia, sans-serif;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.5em;
+    text-align: center;
+}
+
+.spec, .sub, .contact {
+    text-align: center;
 }
 
 .sub {
@@ -40,12 +46,18 @@
     margin-bottom: 1.6em;
 }
 
+.spec {
+    text-align: center; 
+}
+
 p {
     margin-bottom: 0.1em;
+    
 }
 
 .flex {
     display: flex;
+    justify-content: center;
 }
 
 .contact {
@@ -54,7 +66,7 @@ p {
     text-decoration: none;
     position: relative;
     /* color: #db2049; */
-    color: black;
+    color: white;
     padding: 0 0.5em;
 }
 
@@ -84,10 +96,10 @@ p {
 
 /* Carousel Component*/
 .carouselImg {
-    width: 45vw;
-    /* height: 52vh; */
-    height: 65vh;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 500px) {
@@ -97,10 +109,9 @@ p {
 
     .main {
         flex-flow: column;
-        margin: 5%;
         width: auto;
         height: auto;
-        color: black;
+        color: white;
     }
 
     .name {
@@ -111,9 +122,10 @@ p {
     }
 
     .carouselImg {
-        width: 90vw;
-        height: 45vh;
+        /* width: 90vw; */
+        /* height: 45vh; */
         padding: 0;
+        z-index: -5;
     }
 
     .carouselFlex {
@@ -124,10 +136,10 @@ p {
         margin-bottom: 0;
     }
 
-    .spec, .sub, .contact {
+    .name, .spec, .sub, .contact {
         text-align: center;
         letter-spacing: 0;
-        color: black;
+        color: white;
     }
 
     .flex {

@@ -51,7 +51,7 @@ export default class ProjectItem extends Component {
                     <div className={styles.videoBackground}>
                         <div className={styles.videoForeground}>
                         {
-                            videoId.length? <iframe src={this.embedVideo(videoId)} frameBorder="0" allowfullscreen className={styles.iframe}></iframe> :
+                            videoId.length? <iframe src={this.embedVideo(videoId)} frameBorder="0" allowFullScreen className={styles.iframe}></iframe> :
                             <img src={imageSrc} className={styles.videoImg} />
                         }
                             
@@ -89,7 +89,7 @@ const modalStyle = {
         backgroundRepeat: 'no-repeat',
         outline: 'none',
         height: '79.6%',
-        width: '79%',
+        width: '62%',
         margin: 'auto',
         zIndex: 3,
         position: 'fixed',
@@ -99,4 +99,4 @@ const modalStyle = {
     }
 }
 
-// Modal.setAppElement('#___gatsby')
+Modal.setAppElement('#___gatsby')
