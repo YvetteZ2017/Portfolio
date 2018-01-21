@@ -1,7 +1,7 @@
 .container {
     position: relative;
     width: calc(50% - 1em - 8%);
-    margin: 0 0.5em 1em 0.5em;
+    margin: 0 1em 2em 1em;
     /* padding: 1%; */
     /* background-color: #f6f6f6 */
   }

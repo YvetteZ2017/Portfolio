@@ -3,9 +3,11 @@
     margin-bottom: 2em;
 }
 
+.page p {
+    margin-bottom: 1em;
+}
+
 .projectPage {
-    margin-bottom: 2em;
-    align-content: center;
     width: 70vw;
     outline: 0.3% solid #db2049;
 }

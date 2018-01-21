@@ -9,10 +9,9 @@ export default () => (
     <div>
       <p>
         Hi, thank you for visiting my website! 
-        
-        I enjoy engineering challenges in web development. 
-        When I have free time I dance, play the guitar, the pipa. 
       </p>
+      <p>I enjoy engineering challenges in web development. 
+      When I have free time I dance, play the guitar, the pipa.</p>
     </div>
   </div>
   </div>

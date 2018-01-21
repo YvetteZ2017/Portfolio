@@ -14,11 +14,6 @@
     padding: 0 1.3em 0 0;
 }
 
-@font-face {
-    font-family: myFont;
-    src: url(/static/photos/GaramondPro.ttf);
-}
-
 @keyframes textScaleY {
     0% {transform: translateX(20vw); opacity: 0}
     100% {transform: translateX(0); opacity: 1}
@@ -35,7 +30,9 @@
 
 .name {
     font-size: 2em;
-    font-weight: 100;
+    font-weight: 50;
+    font-family: Georgia, sans-serif;
+    letter-spacing: 0.5em;
 }
 
 .sub {
@@ -108,7 +105,6 @@ p {
 
     .name {
         font-size: 7vw;
-        letter-spacing: 0;
         text-align: center;
         font-weight: 100;
         font-family: 'Lato', sans-serif;
