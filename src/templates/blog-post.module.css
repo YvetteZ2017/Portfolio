@@ -1,5 +1,12 @@
 .container {
-    width: 50vw
+    width: 50vw;
+    align-self: center;
+    margin: 18vh auto 2vh auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
 }
 
 img {
