@@ -9,11 +9,11 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
-    "gatsby": "^1.9.145",
+    "gatsby": "^5.3.3",
     "gatsby-link": "^1.6.32",
     "gatsby-plugin-glamor": "^1.6.10",
     "gatsby-plugin-typography": "^1.7.10",
-    "gatsby-source-filesystem": "^1.5.11",
+    "gatsby-source-filesystem": "^5.3.1",
     "gatsby-transformer-remark": "^1.7.26",
     "react-html5video": "^2.5.1",
     "react-icons": "^2.2.7",
